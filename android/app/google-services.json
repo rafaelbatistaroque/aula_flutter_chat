@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1096878280824",
+    "firebase_url": "https://aula-flutter-chat.firebaseio.com",
+    "project_id": "aula-flutter-chat",
+    "storage_bucket": "aula-flutter-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096878280824:android:58ac6cd56ec17618",
+        "android_client_info": {
+          "package_name": "com.example.aula_flutter_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096878280824-9bne88815mob7rlf68haknok8du6lbiv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aula_flutter_chat",
+            "certificate_hash": "35a2ca5f10de8a9dbf644477f49bf51cc8e9a077"
+          }
+        },
+        {
+          "client_id": "1096878280824-juamnveeqojc9mcapi142ju4al29h211.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCtk1j77iOgj8AN0wmBbSjyuLHim9ierU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096878280824-juamnveeqojc9mcapi142ju4al29h211.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
