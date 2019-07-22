@@ -30,9 +30,22 @@ class _HomeState extends State<Home> {
   Widget _buildBody() {
     return Column(
       children: <Widget>[
+        Expanded(
+          child: ListView(
+            children: <Widget>[
+              ChatMessage(),
+              ChatMessage(),
+              ChatMessage(),
+              ChatMessage(),
+            ],
+          ),
+        ),
+        Divider(
+          height: 1.0,
+        ),
         Container(
             decoration: BoxDecoration(color: Theme.of(context).cardColor),
-            child: TextComposer())
+            child: TextComposer()),
       ],
     );
   }
@@ -86,6 +99,40 @@ class _TextComposerState extends State<TextComposer> {
                       ))
           ],
         ),
+      ),
+    );
+  }
+}
+
+class ChatMessage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+      child: Row(
+        children: <Widget>[
+          Container(
+            margin: const EdgeInsets.only(right: 10.0),
+            child: CircleAvatar(
+              backgroundImage: NetworkImage(
+                  "https://i.dailymail.co.uk/i/pix/2017/04/20/13/3F6B966D00000578-4428630-image-m-80_1492690622006.jpg"),
+            ),
+          ),
+          Expanded(
+              child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                "Rafael",
+                style: Theme.of(context).textTheme.subhead,
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 5.0),
+                child: Text("Lorem ipsum"),
+              )
+            ],
+          ))
+        ],
       ),
     );
   }
